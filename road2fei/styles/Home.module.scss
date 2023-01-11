@@ -1,0 +1,328 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+
+  .content {
+    min-width: 100%;
+    max-width: 100%;
+
+    .topper {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+
+      .maincontent {
+        background-color: #1A94C9;
+        width: 48%;
+        min-height: 57vh;
+        margin: 0px 2px 2px 0px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+
+        .mainmain {
+          h1{
+            font-size: 50px;
+          }
+
+          h2 {
+            font-size: 30px;
+          }
+
+          .ciara {
+            color: white;
+            width: 60%;
+            margin: 10px auto;
+          }
+
+          .logos {
+            width: 30%;
+            display: flex;
+            margin: 0px auto;
+
+            .zoch {
+              width: 24%;
+              height: 100%;
+              margin: 2px;
+            }
+
+            .r2f {
+              width: 50%;
+              height: 100%;
+              margin: auto 2px auto 15px;
+            }
+          }
+        }
+      }
+
+      .secondcontent {
+        width: 48%;
+        max-height: 57vh;
+        margin: 0px 0px 2px 2px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+
+        .top {
+          display: flex;
+          height: 50%;
+
+          .nieco {
+            background-color: #1A94C9;
+            width: 50%;
+            min-height: 50%;
+            margin: 2px;
+            border-radius: 15px;
+          }
+
+          .navigation {
+            background-color: white;
+            color: rgb(42, 42, 42);
+            width: 50%;
+            min-height: 50%;
+            margin: 2px;
+            border-radius: 15px;
+            padding: 1em;
+            display: flex;
+            align-items: center;
+
+            ul {
+              list-style: none;
+              text-align: left;
+              height: 50%;
+              width: 70%;
+              margin: auto auto;
+              
+              li {
+                margin-bottom: 10px;
+                font-size: 20px;
+
+                :hover {
+                  cursor: pointer;
+                  font-size: 30px;
+                  color: #1A94C9;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+
+        .bot {
+          display: flex;
+          height: 50%;
+
+          .socials {
+            background-color: white;
+            color: rgb(42, 42, 42);
+            width: 50%;
+            min-height: 50%;
+            margin: 2px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            h3 {
+              font-size: 27px;
+              margin-bottom: 3px;
+            }
+
+            .icons {
+              color: #1A94C9;
+              align-items: center;
+              justify-content: center;
+              a {
+                margin: 0px 10px;
+              }
+            }
+
+            .spse {
+              margin-bottom: 15px;
+            }
+          }
+
+          .qr {
+            background-color: #1A94C9;
+            width: 50%;
+            min-height: 50%;
+            margin: 2px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .kod {
+              width: 45%;
+              height: auto;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+
+    .botcontent {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-direction: row-reverse;
+
+      .left {
+        width: 48%;
+        min-height: 34vh;
+        margin-left: 4px;
+        display: flex;
+        border-radius: 15px;
+
+        .logo {
+          background-color: white;
+          color: rgb(42, 42, 42);
+          width: 50%;
+          min-height: 99.5%;
+          margin: 2px;
+          border-radius: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .logoo {
+            width: 90%;
+            height: auto;
+          }
+        }
+
+        .team {
+          background-color: #1A94C9;
+          width: 50%;
+          min-height: 99.5%;
+          margin: 2px;
+          border-radius: 15px;
+        }
+      }
+
+      .fotky {
+        background-color: #1A94C9;
+        width: 48%;
+        min-height: 34vh;
+        margin: 2px 0px 0px 2px;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .wrapper {
+    .content {
+      .topper {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+        .maincontent {
+          width: 98%;
+          margin: 2px;
+
+          .mainmain {
+            h1 {
+              font-size: 30px;
+            }
+            h2 {
+              font-size: 20px;
+            }
+          }
+        }
+
+        .secondcontent {
+          width: 98%;
+          margin: 2px;
+
+          .top {
+            .nieco {
+              width: 50%;
+              aspect-ratio: 1/1;
+            }
+            .navigation {
+              width: 50%;
+              aspect-ratio: 1/1;
+                padding: 0px;
+                h3 {
+                  font-size: 15px;
+                }
+            
+                ul {
+                  li {
+                    margin: 5px 0px;
+                    font-size: 20px;
+
+                  }
+                }
+              }
+          }
+
+          .bot {
+            .socials {
+              width: 50%;
+              aspect-ratio: 1/1;
+              margin: 2px;
+              h3 {
+                font-size: 15px;
+              }
+            }
+
+            .qr {
+              width: 50%;
+              aspect-ratio: 1/1;
+              .kod {
+                width: 90%;
+                margin: 2px;
+              }
+            }
+          }
+        }
+
+      }
+
+      .botcontent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+        .fotky {
+          width: 98%;
+          margin: 2px;
+        }
+
+        .left {
+          width: 98%;
+          margin: 2px;
+
+          .logo {
+            width: 50%;
+            aspect-ratio: 1/1;
+            .logoo {
+              width: 100%;
+            }
+          }
+
+          .team {
+            width: 50%;
+            aspect-ratio: 1/1;
+          }
+        }
+      }
+    }
+  }
+}
